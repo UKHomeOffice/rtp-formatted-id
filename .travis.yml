@@ -2,3 +2,11 @@ language: node_js
 node_js:
 - '4'
 - '5'
+deploy:
+  provider: npm
+  email: davethompson21@gmail.com
+  api_key:
+    secure: sEFxobLtur3ha3uUdqpZFIRg/gxvFGjiIMOf/LxP9vI7mUvqL0aBiXxmokze21gtdRwJGz83wnxco4svqoVjTSBRxX0k8DwEY/F+ZNftQYzIpGqEY0xOS7Drv6LlbvM1xXl/krbo7LomZWDO8qQK5XzUhXUoJitLVce2uWr4Ky/5fa92bbuzZzfSIE72S2vDCTG1yfZ7cZeL2Y/xRVXEXdpqglVl7TfflxYXhRgN4Cg9ChoUD8Eez/egq5N4ohSrhHKMYvz3lsD2ei1wdhCazA+91XS+HiTZORU5+2vcaPp5qzNd5+dpYYur1T1YOAcMsQ1J/YjYGjES1hY7PaqdAyxmrF3te05xUdfpaOM6yha8ChYrXyrP2dnlEFNU3dBQTYuvGzR01P57dguFklOKErseiqxL33wYwpM9tRlcyJPh3qFeCmhekJ8HZiPACRxm7+fGNW5dW5Ke7Iz5GyMyrgRMK68H9N2xMDDVHvXinw9lXgZ7nAoGNE4yCzaB4qlKSMz8xEouM06zRW8TwyALAkaVU09KGdYpm7SzeXtYAFiVM7/4lFVG5NzbE7PFpnDi+LuA47l+RUyPG77v3491WiaNXg5hcI2HfJdI62w6haKsE2ASUa/XWc6FF3cjHWg+g9EsgJArFsQ69eUmqucm1Y4OLAFeMaRnN/l8GpsOFHU=
+  on:
+    tags: true
+    repo: UKHomeOffice/rtp-formatted-id
