@@ -33,7 +33,6 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "postinstall": "npm run lint",
     "lint": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
