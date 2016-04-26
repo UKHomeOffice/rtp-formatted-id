@@ -1,5 +1,7 @@
 # rtp-reference-id
 
+[![Build Status](https://travis-ci.org/UKHomeOffice/rtp-formatted-id.svg?branch=master)](https://travis-ci.org/UKHomeOffice/rtp-formatted-id)
+
 This module creates non-sequential ids to use in your applications. The aim is to avoid duplicates: the longest the id
 you creates, the most unlikely the creation of duplicates is.
 
