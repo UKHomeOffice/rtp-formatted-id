@@ -2,7 +2,7 @@
   "name": "rtp-formatted-id",
   "description": "Create unique non sequential ids",
   "keywords": ["rtp", "formatted-id", "non-sequential"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
