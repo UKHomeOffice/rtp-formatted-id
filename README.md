@@ -23,18 +23,17 @@ you must supply the options to the `generate` function. An example is below: -
  
 ``` javascript
 var FormattedId = require('rtp-formatted-id');
-var formattedId = new FormattedId();
-formattedId.setConfig({
-    format: 'Y-P-NN-LL',
-    products: {
-        productName: {
-            applicationTypeName: 'A',
-            otherApplicationTypeName: 'B'
-        },
-        otherProductName: {
-            applicationTypeName: 'C'
-        }
-    }
+var formattedId = new FormattedId({
+  format: 'Y-P-NN-LL',
+  products: {
+      productName: {
+          applicationTypeName: 'A',
+          otherApplicationTypeName: 'B'
+      },
+      otherProductName: {
+          applicationTypeName: 'C'
+      }
+  }
 });
 formattedId.generate({
     // pass 2016 as argument to the method identified by the letter Y, in this case mapYear
@@ -46,6 +45,8 @@ formattedId.generate({
     }
 });  // outputs something like A-A-72-DH 
 ```
+
+Note, config can be passed to the constructor on initialisation or you can call the `setConfig` method.
 
 Some more examples of possible formats are as follows: -
 

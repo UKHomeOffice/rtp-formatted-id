@@ -26,6 +26,20 @@ describe('FormattedId', function () {
         formattedId = new FormattedId();
     });
 
+    describe('#constructor', function() {
+
+        it('should initialise with default config if not specified', function() {
+            expect(formattedId.config).to.deep.equal(mockConfig);
+        });
+
+        it('should set config on creation if it is supplied', function() {
+            let config = {format: 'NN-LL'};
+            let formattedIdWithConfig = new FormattedId(config);
+            expect(formattedIdWithConfig.config).to.deep.equal(config);
+        });
+
+    });
+
     describe('#_findInitialiserByIdentifier', function() {
 
         it('should return undefined if initialiser does not exist', function() {
