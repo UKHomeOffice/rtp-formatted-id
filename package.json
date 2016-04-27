@@ -1,13 +1,21 @@
 {
   "name": "rtp-formatted-id",
   "description": "Create unique non sequential ids",
-  "keywords": ["rtp", "formatted-id", "non-sequential"],
+  "keywords": [
+    "rtp",
+    "formatted-id",
+    "non-sequential"
+  ],
   "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/UKHomeOffice/rtp-formatted-id.git"
   },
+  "contributors": [
+    "Dave Thompson <davethompson21@gmail.com>",
+    "Barbara Cassani <barbara@kitsch-en.net>"
+  ],
   "dependencies": {
     "lodash": "^4.11.1",
     "profanity-matcher": "0.0.5",
@@ -16,6 +24,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
     "eslint": "^0.24.1",
     "eslint-config-homeoffice": "0.1.4",
     "eslint-config-standard": "3.4.1",

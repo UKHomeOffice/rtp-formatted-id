@@ -60,8 +60,7 @@ You can use separators in the format, that will be conserved.
 format: 'LLL-NNN-LLL  // outputs something like PLW-682-LMV
 ```
 
-How it works
--------------
+## How it works
 
 In the folder `initialisers` you'll find pre-made modules that can be added to your config. Each module needs to exports
 two things: `method` and `identifier`.
@@ -95,9 +94,28 @@ formattedId.generate({
 
 All the components in the `initialisers` folder are loaded automatically. You can add your own as long as they have the
 same interface and map to a letter unambiguosly.
+
  
-Caveats
--------
+## Using the demo
+
+To provide you with a quick evaluation tool, you can use the script `demo.js`. Run it as a bash script after doing a 
+`chmod +x` to make it executable, or do `npm install -g` and run `demo` in your terminal.
+
+You must specify how many codes you want to generate and the format to use. For example: -
+
+```
+./demo.js 100 LL-NNN-YY  // 100 codes in format letter-letter-number-number-number-mapYear-mapYear
+```
+    
+You can also use the options -a (pass a json string as arguments to `generate`, see above) and -o (show the output).
+
+```
+./demo.js 100 LL-NNN-YY -a '{ "Y": 2016 }' -o true   // pass 2016 to mapYear, show the codes
+```
+
+Please note that the generation may take a long time if you specify a very high number of codes, especially with `-o true` enabled.
+
+## Caveats
  
 This software doesn't guarantee the ids will be unique. A short config like `LL-NN` is likely to generate conflicts after 
 a few hundred runs. Conversely, a longer config like `LLLLL-NNNNN` is unlikely to have one conflict after one million runs. 
