@@ -1,6 +1,7 @@
 # rtp-reference-id
 
 [![Build Status](https://travis-ci.org/UKHomeOffice/rtp-formatted-id.svg?branch=master)](https://travis-ci.org/UKHomeOffice/rtp-formatted-id)
+[![npm version](https://badge.fury.io/js/rtp-formatted-id.svg)](https://www.npmjs.com/package/rtp-formatted-id)
 
 This module creates non-sequential ids to use in your applications. The aim is to avoid duplicates: the longest the id
 you creates, the most unlikely the creation of duplicates is.
@@ -10,7 +11,8 @@ you creates, the most unlikely the creation of duplicates is.
 To use straight off with the default format, you can simply do.
 
 ``` JavaScript
-var formattedId = require('rtp-formatted-id');
+var FormattedId = require('rtp-formatted-id');
+var formattedId = new FormattedId();
 formattedId.generate();  // outputs something like EF-435670-LU
 ```
 
@@ -20,7 +22,8 @@ If you set the format to something that uses the `mapYear` and / or `mapProduct`
 you must supply the options to the `generate` function. An example is below: -
  
 ``` javascript
-var formattedId = require('rtp-formatted-id');
+var FormattedId = require('rtp-formatted-id');
+var formattedId = new FormattedId();
 formattedId.setConfig({
     format: 'Y-P-NN-LL',
     products: {
@@ -82,7 +85,8 @@ Conversely, you can pass arguments indexed by letters to the `generate` method -
 component.
 
 ``` javascript
-var formattedId = require('rtp-formatted-id');
+var FormattedId = require('rtp-formatted-id');
+var formattedId = new FormattedId();
 //  pass 2016 as argument to the method identified by the letter Y, in this case mapYear
 formattedId.generate({
    Y : 2016
