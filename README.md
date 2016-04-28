@@ -1,4 +1,4 @@
-# rtp-reference-id
+# RTP formatted ID
 
 [![Build Status](https://travis-ci.org/UKHomeOffice/rtp-formatted-id.svg?branch=master)](https://travis-ci.org/UKHomeOffice/rtp-formatted-id)
 [![npm version](https://badge.fury.io/js/rtp-formatted-id.svg)](https://www.npmjs.com/package/rtp-formatted-id)
