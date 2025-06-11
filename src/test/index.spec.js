@@ -47,7 +47,7 @@ describe('FormattedId', function () {
         });
 
         it('should return the method function', function() {
-            expect(formattedId._findInitialiserByIdentifier('L')).to.be.a.function;
+            expect(formattedId._findInitialiserByIdentifier('L')).to.be.instanceOf(Function);
         });
 
     });

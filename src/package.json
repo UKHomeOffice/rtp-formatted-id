@@ -1,0 +1,25 @@
+{
+  "name": "rtp-formatted-id",
+  "description": "Create unique non sequential ids",
+  "version": "0.1.5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UKHomeOffice/rtp-formatted-id.git"
+  },
+  "dependencies": {
+    "lodash": "4.17.21",
+    "profanity-matcher": "1.0.1",
+    "require-all": "3.0.0"
+  },
+  "devDependencies": {
+    "chai": "5.2.0",
+    "mocha": "11.6.0",
+    "proxyquire": "2.1.3",
+    "sinon": "20.0.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  }
+}
